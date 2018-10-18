@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+.left{
+    width: 43%;
+    height: auto;
+    display: inline-block;
+}
+.right{
+    width: 43%;
+    height: auto;
+    display: inline-block;
+    border-left: 2px solid black;
+    vertical-align: top;
+    margin-left: 5%;
+}
+.form-control{
+    margin-left: 8%;
+}
+button{
+    margin-left: 88%;
+}
+li{
+    margin-left: 10%;
+}

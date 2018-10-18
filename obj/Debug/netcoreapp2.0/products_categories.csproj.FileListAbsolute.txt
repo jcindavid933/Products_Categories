@@ -1,0 +1,10 @@
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/bin/Debug/netcoreapp2.0/products_categories.deps.json
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/bin/Debug/netcoreapp2.0/products_categories.runtimeconfig.json
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/bin/Debug/netcoreapp2.0/products_categories.runtimeconfig.dev.json
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/bin/Debug/netcoreapp2.0/products_categories.dll
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/bin/Debug/netcoreapp2.0/products_categories.pdb
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/obj/Debug/netcoreapp2.0/products_categories.csproj.CoreCompileInputs.cache
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/obj/Debug/netcoreapp2.0/products_categories.AssemblyInfoInputs.cache
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/obj/Debug/netcoreapp2.0/products_categories.AssemblyInfo.cs
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/obj/Debug/netcoreapp2.0/products_categories.dll
+/Users/david/Desktop/Coding Dojo/csharp/products_categories/obj/Debug/netcoreapp2.0/products_categories.pdb

@@ -1,0 +1,46 @@
+@model Product
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products and Categories</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <h1>@Model.Name</h1><br>
+        <div class="left">
+            <h1>Categories: </h1>
+                <ul>
+                    @foreach(var association in Model.Associations)
+                    {
+                        <li>@association.Category.Name </li>
+                    }
+                </ul>
+        </div>
+        <div class="right">
+            <form action="/Associations" method="post">
+                <div class="form-group col-md-4">
+                    <input type="hidden" name="pro" value="@Model.ProductId">
+                    <label>Add Category: </label>
+                    <select name="cat" id="inputState" class="form-control">
+                        <option selected="true" disabled="disabled">Select</option>  
+                        @foreach (var category in @ViewBag.categories)
+                        {
+                            <option value="@category.CategoryId">@category.Name</option>
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button><br><br>
+                <span asp-validation-for="Name"></span>
+            </form>
+            <a href="/"><button type="submit" class="btn btn-primary">Home</button></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
